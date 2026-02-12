@@ -127,7 +127,54 @@ address {
     opacity: 0.8; 
 }
 
+.sobre {
+    background-color: #181012;
+    padding: 4rem 0;
+}
 
+.titulo-secao {
+    color: var(--cor-primaria);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.conteudo-sobre {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagem-sobre {
+    width: 45%;
+    border-radius: 10px;
+    min-width: 300px;
+    flex: 1;
+}
+
+.texto-sobre {
+    width: 50%;
+    min-width: 300px;
+    flex: 1;
+}
+
+.destaque {
+    color: var(--cor-destaque);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.texto-sobre h3 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.texto-sobre p {
+    color: var(--texto-cinza);
+    font-size: 1.2rem;
+}
 
 @media (max-width: 768px) {
     .nav-header {
@@ -158,5 +205,9 @@ address {
         flex-direction: column;
         align-items: center;
         padding-top: 1rem;
+    }
+
+    .menu.aberto {
+        display: flex;
     }
 }
