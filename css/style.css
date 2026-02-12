@@ -70,6 +70,11 @@ address {
     color: var(--cor-destaque);
 }
 
+/* Esconde quando tela grande */
+.btn-menu {
+    display: none;
+}
+
 .botao {
     background-color: var(--cor-secundaria);
     color: var(--texto-claro) !important;
@@ -120,4 +125,38 @@ address {
     width: 60px;
     margin-top: 2rem;
     opacity: 0.8; 
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-header {
+        justify-content: center;
+    }
+
+    .menu {
+        padding-top: 0;
+    }
+
+    /* Programação (exclusiva para menu hamburguer) */
+    .btn-menu {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--texto-claro);
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    .nav-header {
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+    }
 }
