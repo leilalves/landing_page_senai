@@ -176,6 +176,42 @@ address {
     font-size: 1.2rem;
 }
 
+.info {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.cards-info {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #241a1c;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.card h3 {
+    color: var(--cor-destaque);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    background-color: var(--fundo-escuro);
+    padding: 1.5rem;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 @media (max-width: 768px) {
     .nav-header {
         justify-content: center;
